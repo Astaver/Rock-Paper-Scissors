@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
-        <meta charset="UTF-8"/>
+        <title>Rock, Paper, Scissors</title>
+        <meta charset="UTF-8"  content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <script src="guts.js"></script>
+    <body class = "container">
+        
+
+        <div class="centerCollumn">
+            <div class = "intro">
+                <div class="header"><img src="images/top_banner.png"></div>
+                <div class="instruct">
+                    <div class="preface">Rock, Paper, Scissors is the time honored tradition to 
+                        resolve, well anything. Who gets the last taco? Who has to turn the AC down. 
+                        Who has to take the trash to the street? 3 words. Rock. Paper. Scissors.
+                    </div>
+                    <ol>
+                        <li>Paper beats Rock</li>
+                        <li>Rock beats Scissors</li>
+                        <li>Scissors beats Rock</li>
+                    </ol>
+                    First one to 5 wins. Can you beat me?
+                    Click an image to play.
+                </div>
+                <!--<div class="instruct">Click an image to play</div>-->
+            </div>    
+            <div class="buttonHub">
+                <!--<input type="image" name="Name of image button" src="Path of the Image file? border="Specfiy Image Border " alt="text"> -->
+                <input class = rockImage type="image" name="rock" src="images/rock.jpg" border=5px alt="Rock">
+                <input class = paperImage type="image" name="paper" src="images/paper.jpeg" border=5px alt="Paper">
+                <input class = scissorImage type="image" name="scissors" src="images/scissors.jpeg" border=5px alt="Scissors">
+                <!-- <button class="rock" type="button">Rock</button>
+                <button class="paper" type="button">Paper</button>
+                <button class="scissors" type="button">Scissors</button> -->
+            </div>
+            <div class="outputHub">
+                <div id="plaOutput"></div>
+                <div id="cpuOutput"></div>
+                <div id="outcome"></div>
+                <div id="scoreBoard"></div>
+                <div id="reboot"></div>
+            </div>
+            <div class="bottonContainer">
+                <div id="newGame"></div>
+            </div>
+        </div>
+
+        
+        <script src='script.js'></script>
+        
     </body>
+    <footer>
+        Designed by Aaron Staver
+    </footer>
 </html>

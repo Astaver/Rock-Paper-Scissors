@@ -1,0 +1,109 @@
+.container {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.header {
+    font-size: 50px;
+}
+
+
+.instruct {
+    font-size: 20px;
+    color: purple;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+
+.buttonHub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: pink;
+    padding: 25px;
+}
+
+.rockImage {
+    width: 150px;
+    height: 150px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rockImage:after {
+    content: "";
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.rockImage:active::after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.paperImage {
+    width: 150px;
+    height: 150px;
+}
+
+.scissorImage {
+    width: 150px;
+    height: 150px;
+}
+
+
+
+.outputHub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: purple;
+    background-color: aqua;
+    padding: 25px;
+}
+
+
+.bottomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+
+#newGame {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
